@@ -31,15 +31,29 @@ h1 {
 .jumbotron {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: whitesmoke;
+  background-color: #682020;
 }
 
 .jumbotron h2 {
   text-align: center;
+  color: whitesmoke;
 }
 
 .jumbotron p {
+  color: whitesmoke;
   margin-bottom: 0;
+}
+
+.con-wrapper-1 {
+  background-color: #682020;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.con-wrapper-1 h2 {
+  text-align: center;
+  padding: 5rem 0 0 0;
+  color: whitesmoke;
 }
 
 .text-box {
@@ -55,6 +69,83 @@ h1 {
 
 .text-box h1 {
   font-size: 80px;
+}
+
+.details a {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.cards-section {
+  background-color: #682020;
+}
+
+.cards-section h2 {
+  padding-top: 5rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.cards {
+  place-items: center center;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards .card {
+  background-color: #1c1b29;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+  width: 300px;
+  height: 500px;
+}
+
+@media (max-width: 700px) {
+  .cards .card {
+    width: 300px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 320px) {
+  .cards .card {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+.cards .img-container {
+  position: relative;
+  padding-right: 0%;
+  padding-left: 0%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.cards h3 {
+  color: #fff;
+  text-align: center;
+}
+
+.cards img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-width: 90vw;
+  display: block;
+  border-radius: 20px 20px 0 0;
 }
 
 @media (max-width: 700px) {

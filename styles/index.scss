@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
 
+$red: #682020;
+
 *{
     font-family: "Georama", sans-serif;
 }
@@ -31,16 +33,27 @@ h1{
 .jumbotron{
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-color: whitesmoke;
+    background-color: $red;
     h2{
         text-align: center;
+        color: whitesmoke;
     }
     p{
+        color: whitesmoke;
         margin-bottom: 0;
     }
 }
 
-
+.con-wrapper-1{
+    background-color: $red;
+    margin-right: 0;
+    margin-left: 0;
+    h2{
+        text-align: center;
+        padding: 5rem 0 0 0;
+        color: whitesmoke;
+    }
+}
 
 .text-box{
     width: 90%;
@@ -54,6 +67,68 @@ h1{
 
 .text-box h1{
     font-size: 80px;
+}
+
+.details a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff
+}
+
+.cards-section {
+    background-color: $red;
+    h2{
+        padding-top: 5rem;
+        color: whitesmoke;
+        text-align: center;
+    }
+}
+
+.cards{
+    place-items: center center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .card{
+        background-color: #1c1b29;
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(0,0,0,0.18);
+        width: 300px;
+        height: 500px;
+
+        @media(max-width: 700px) {
+            width: 300px;
+            height: 500px;
+        }
+
+        @media(max-width: 320px) {
+            width: 250px;
+            height: 350px;
+        }
+    }
+
+    .img-container{
+        position: relative;
+        padding-right: 0%;
+        padding-left: 0%;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    h3{
+        color: #fff;
+        text-align: center;
+    }
+
+    img{
+        object-fit: cover;
+        width: 100%;
+        max-width: 90vw;
+        display: block;
+        border-radius: 20px 20px 0 0;
+    }
 }
 
 @media(max-width: 700px){
