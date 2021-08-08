@@ -24,6 +24,24 @@ $red: #682020;
     position: relative;
 }
 
+.bottom-container{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(#6d0c0ca9, #00000080), url("../images_penthouse/front.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+    position: relative;
+
+    h2{
+        text-align: center;
+        padding-top: 10rem;
+        color: whitesmoke;
+    }
+}
+
+
 h1{
     position: relative;
     font-size: 8rem;
@@ -34,10 +52,12 @@ h1{
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: $red;
+
     h2{
         text-align: center;
         color: whitesmoke;
     }
+
     p{
         color: whitesmoke;
         margin-bottom: 0;
@@ -77,16 +97,34 @@ h1{
 
 .cards-section {
     background-color: $red;
+    padding-left: 160px;
+    padding-right: 160px;
     h2{
         padding-top: 5rem;
         color: whitesmoke;
         text-align: center;
     }
+
+    @media(max-width: 1400px) {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    @media(max-width: 1300px) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    @media(max-width: 1200px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
 }
 
 .cards{
     place-items: center center;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -96,17 +134,45 @@ h1{
         background-color: #1c1b29;
         border-radius: 20px;
         box-shadow: 0 0 30px rgba(0,0,0,0.18);
-        width: 300px;
-        height: 500px;
+        width: 400px;
+        height: 625px;
+
+        @media(max-width: 1400px) {
+            width: 400px;
+            height: 625px;
+        }
+
+        @media(max-width: 1000px) {
+            width: 700px;
+            height: 950px;
+        }
 
         @media(max-width: 700px) {
             width: 300px;
             height: 500px;
         }
 
+        @media(max-width: 775px) {
+            width: 500px;
+            height: 700px;
+        }
+
+        @media(max-width: 600px) {
+            width: 400px;
+            height: 575px;
+        }
+
+        @media(max-width: 510px) {
+            width: 325px;
+            height: 500px;
+        }
+
+        @media(max-width: 375px) {
+            height: 425px;
+        }
+
         @media(max-width: 320px) {
-            width: 250px;
-            height: 350px;
+            height: 325px;
         }
     }
 
@@ -128,6 +194,15 @@ h1{
         max-width: 90vw;
         display: block;
         border-radius: 20px 20px 0 0;
+    }
+
+    @media(max-width: 1000px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    @media(max-width: 560px) {
+        padding: 40px;
     }
 }
 
