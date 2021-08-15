@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama&display=swap");
+* {
+  font-family: "Georama", sans-serif;
+}
+
+#one {
+  padding: 60px 0;
+  background-color: black;
+}
+
+h2 {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2% 6%;
+}
+
+.img-container {
+  position: relative;
+  padding-right: 0%;
+  padding-left: 0%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-width: 90vw;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+
+.card {
+  background-color: #501e1eef;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 30px rgba(85, 17, 17, 0.822);
+          box-shadow: 0 0 30px rgba(85, 17, 17, 0.822);
+  width: 400px;
+  height: 625px;
+}
+
+.top-container {
+  min-height: 60vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#04091e80), to(#6d0c0c80)), url("../images_penthouse/charactersinfo.jpeg");
+  background-image: linear-gradient(#04091e80, #6d0c0c80), url("../images_penthouse/charactersinfo.jpeg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.second-container {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6d0c0cc7), to(#000000bd)), url("../images_penthouse/charactersinfo.jpeg");
+  background-image: linear-gradient(#6d0c0cc7, #000000bd), url("../images_penthouse/charactersinfo.jpeg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.jumbotron h2 {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.jumbotron p {
+  color: whitesmoke;
+  margin-bottom: 0;
+}
+
+h1 {
+  position: relative;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.con-wrapper-1 {
+  background-color: #682020;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.con-wrapper-1 h2 {
+  text-align: center;
+  padding: 5rem 0 0 0;
+  color: whitesmoke;
+}
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 80px;
+}
+
+.details a {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer p {
+  color: #6b6d72;
+}
+
+.mb-2 h6 {
+  color: #6b6d72;
+}
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=characters.css.map */
