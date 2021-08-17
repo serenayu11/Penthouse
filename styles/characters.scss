@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+
+$red: #682020;
+
+*{
+    font-family: "Georama", sans-serif;
+}
+
+.header{
+    nav{
+        display: flex;
+        padding: 2% 6%;
+    }
+}
+
+#one{
+    padding: 60px 0;
+    background-color: #030303;
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.card{
+    background-color: #501e1e;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #000000;
+    position: relative;
+    height: 96%;
+    transition-duration: .3s;
+
+    img{
+        vertical-align: middle;
+        object-fit: fill;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .img-container{
+        transition-duration: .3s;
+        position: relative;
+        padding-right: 0;
+        padding-left: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    .details{
+        margin-top: 1rem;
+        margin-left: 15px;
+        margin-right: 15px;
+        p{
+            color: #f3f3f3c7;
+            text-align: center;
+        }
+    }
+
+    &:hover{
+        background-color: rgb(112, 32, 32);
+        transform: scale(0.95) translateY(-0.8rem);
+        .img-container{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+}
+
+.top-container{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(#04091e80, #6d0c0c80), url("../images_penthouse/charactersinfo.jpeg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+    position: relative;
+
+    img{
+        vertical-align: middle;
+        object-fit: fill;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    
+}
+
+.second-container{
+    width: 100%;
+    background-image: linear-gradient(#6d0c0cc7, #000000bd), url("../images_penthouse/charactersinfo.jpeg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+    position: relative; 
+    .jumbotron .container p{
+        color: #f3f3f3da;
+    }
+}
+
+.jumbotron{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    h2{
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    p{
+        color: whitesmoke;
+        margin-bottom: 0;
+    }
+}
+
+
+h1{
+    position: relative;
+    font-size: 8rem;
+    text-align: center;
+}
+
+.con-wrapper-1{
+    background-color: $red;
+    margin-right: 0;
+    margin-left: 0;
+    h2{
+        text-align: center;
+        padding: 5rem 0 0 0;
+        color: whitesmoke;
+    }
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 80px;
+}
+
+.details a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff
+}
+
+footer{
+    p, div{
+        color: #6b6d72
+    }
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 30px;
+    }
+}
